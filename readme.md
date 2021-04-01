@@ -25,7 +25,8 @@ Delete Pod: kubectl delete pod posts
 Event Log: kubectl describe pod posts
 
 Deployment#2:
-Creating Deployment*1: kubectl apply -f nodejs-hw-pod.yml OR  kubectl apply -f .
+Creating Deployment*1: kubectl apply -f nodejs-hw-pod.yml 
+                   OR  kubectl apply -f .
 Rollout & Restart*1.2(when code is updated): kubectl rollout restart deployment deployment_name_here
 Get Pods*2: kubectl get pods
 Expose with Port*2.1: kubectl expose pod nodejs-hw-pod --type=NodePort --name nodejs-hw-service
